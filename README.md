@@ -7,9 +7,7 @@ ________________________________________________________________________________
 Script "classificatore.py"
 
 
-######################
-#Variabili di ambiente
-######################
+############ Variabili di ambiente ############
 
 Per l'esecuzione dello script è necessario impostare le variabili di ambiente 
 INPUT_HADOOP=/.../.../.../			path in cui si trovano i file di input in HDFS
@@ -17,9 +15,7 @@ OUTPUT_HADOOP=/.../.../.../			path in cui si vogliono salvare i file di output i
 
 
 
-#############
-#Prerequisiti
-#############
+############ Prerequisiti ############
 
 Per l'esecuzione bisogna installare Hadoop, scaricando l'estensione "Hadoop Streaming" per l'esecuzione con Python.
 Fare il download di Hadoop Streaming nella posizione "/usr/local/hadoop/contrib/hadoop-streaming-2.7.3.jar" oppure modificare il path nello script
@@ -29,9 +25,7 @@ E' necessario inserire nello script la password di connessione al db (riga 111 d
 
 
 
-######
-#Input
-######
+############ Input ############
 
 L'input dello script da linea di comando è del tipo:
 python classificatore.py nodo_interesse [nodo_da_ricercare peso_del_nodo]
@@ -47,9 +41,7 @@ python classificatore.py Cliente CodiceFiscale 11  DocId 11 Documento 11 Email 1
 
 
 
-#######
-#Output
-#######
+############ Output ############
 
 Lo script restituisce i file di seguito elencati; gli stessi vengono salvati automaticamente nella cartella "Risultati" appositamente creata dallo script nella posizione in cui viene lo stesso eseguito.
 
@@ -94,16 +86,12 @@ ________________________________________________________________________________
 script "query_3_modificata.py"
 
 
-#############
-#Prerequisiti
-#############
+############ Prerequisiti ############
 
 E' necessario inserire nello script la password di connessione al db (riga 7 dello script).
 
 
-#######
-#Output
-#######
+############ Output ############
 
 Viene restituito in quattro file creati nella stessa posizione dello script.
 
