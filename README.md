@@ -10,6 +10,7 @@ ________________________________________________________________________________
 ######################
 #Variabili di ambiente
 ######################
+
 Per l'esecuzione dello script è necessario impostare le variabili di ambiente 
 INPUT_HADOOP=/.../.../.../			path in cui si trovano i file di input in HDFS
 OUTPUT_HADOOP=/.../.../.../			path in cui si vogliono salvare i file di output in HDFS
@@ -18,6 +19,7 @@ OUTPUT_HADOOP=/.../.../.../			path in cui si vogliono salvare i file di output i
 #############
 #Prerequisiti
 #############
+
 Per l'esecuzione bisogna installare Hadoop, scaricando l'estensione "Hadoop Streaming" per l'esecuzione con Python.
 Fare il download di Hadoop Streaming nella posizione "/usr/local/hadoop/contrib/hadoop-streaming-2.7.3.jar" oppure modificare il path nello script
 Avviare Hadoop e Neo4j.
@@ -28,6 +30,7 @@ E' necessario inserire nello script la password di connessione al db (riga 111 d
 ######
 #Input
 ######
+
 L'input dello script da linea di comando è del tipo:
 python classificatore.py nodo_interesse [nodo_da_ricercare peso_del_nodo]
 
@@ -44,28 +47,37 @@ python classificatore.py Cliente CodiceFiscale 11  DocId 11 Documento 11 Email 1
 #######
 #Output
 #######
+
 Lo script restituisce i file di seguito elencati; gli stessi vengono salvati automaticamente nella cartella "Risultati" appositamente creata dallo script nella posizione in cui viene lo stesso eseguito.
 
 pesi.txt
+
 File contenente labels e pesi inseriti in input allo script, vengono salvati in un file per essere riutilizzati dallo script.
 
 nodi_pesati.txt
+
 File contenente l'elenco di tutti i nodi, con relativo score.
 
 elenco_punteggi_per_nodo_ordinato.txt
+
 File contenente la lista di tutti i nodi con relativo punteggio in ordine decrescente.
 
 input_mapper.txt
+
 File contenente l'elenco di tutti i nodi di interesse con coppie di altri nodi ad esso collegati.
 
 out_mr
+
 Cartella di output del primo MapReduce
 
 out_pesato
+
 Cartella di output del secondo MapReduce
 
 risultato_finale.txt
 File contenenre il risultato dell'intera elaborazione consistente nell'elenco di tutti i nodi con relativo id, tipo, score e lista di utenti ad esso collegati.
+
+
 
 
 
@@ -76,12 +88,16 @@ ________________________________________________________________________________
 #############
 #Prerequisiti
 #############
+
 E' necessario inserire nello script la password di connessione al db (riga 7 dello script).
 
 #######
 #Output
 #######
+
 Viene restituito in quattro file creati nella stessa posizione dello script.
+
+
 
 
 
