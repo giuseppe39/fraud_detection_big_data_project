@@ -3,9 +3,9 @@ Secondo progetto corso di Big Data
 
 Istruzioni per l'esecuzione degli script.
 
-
-Script "classificatore.py"
 ________________________________________________________________________________________________________________________________
+Script "classificatore.py"
+
 
 ######################
 #Variabili di ambiente
@@ -90,9 +90,9 @@ File contenenre il risultato dell'intera elaborazione consistente nell'elenco di
 
 
 
-
-script "query_3_modificata.py"
 ________________________________________________________________________________________________________________________________
+script "query_3_modificata.py"
+
 
 #############
 #Prerequisiti
@@ -112,8 +112,8 @@ Viene restituito in quattro file creati nella stessa posizione dello script.
 
 
 
-
-Script "mapper_1.py", "reducer_1.py", "mapper_ordina.py", "reducer_ordina.py"
 ________________________________________________________________________________________________________________________________
+Script "mapper_1.py", "reducer_1.py", "mapper_ordina.py", "reducer_ordina.py"
+
 Vengono eseguiti in autonomia dallo script "classificatore.py".
 
